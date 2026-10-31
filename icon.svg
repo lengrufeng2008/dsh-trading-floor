@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="Trading Floor">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#020617"/><stop offset="1" stop-color="#0f766e"/></linearGradient></defs>
+  <rect width="256" height="256" rx="56" fill="url(#g)"/>
+  <path d="M40 184V92h20v92H40Zm40 0V72h20v112H80Zm40 0v-56h20v56h-20Zm40 0V56h20v128h-20Zm40 0v-88h20v88h-20Z" fill="#5eead4"/>
+  <path d="M36 196h184" stroke="#99f6e4" stroke-width="6" stroke-linecap="round" opacity=".5"/>
+</svg>
