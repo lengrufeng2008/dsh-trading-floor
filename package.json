@@ -1,0 +1,60 @@
+{
+  "name": "dsh-trading-floor",
+  "version": "0.2.0",
+  "description": "Live DSH session desk: active book, tokens, cache, context, spend, and human gates. Read-only; no market data or orders.",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "assets/*.png",
+    "docs/*.png",
+    "docs/*.gif",
+    "screenshots.json",
+    "REVIEW.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test test/snapshot.test.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lengrufeng2008/dsh-trading-floor.git"
+  },
+  "homepage": "https://github.com/lengrufeng2008/dsh-trading-floor#readme",
+  "bugs": {
+    "url": "https://github.com/lengrufeng2008/dsh-trading-floor/issues"
+  },
+  "author": "lengrufeng2008",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dashboard",
+    "telemetry",
+    "tokens",
+    "usage",
+    "trading-floor"
+  ]
+}
